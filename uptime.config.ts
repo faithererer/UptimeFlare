@@ -15,7 +15,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     "🌐 公共服务": ['imgbed_monitor', 'gemini_polling_monitor', 'alist_monitor', 'blog', 'sillytavern_monitor'],
-    "🖥️ 服务器": ['cn2_2c_2g', 'tokyo_bgp_lite', 'rk_us_1h1g', 'ak_hk_1c1g']
+    "🖥️ 服务器": ['cn2_2c_2g', 'tokyo_bgp_lite', 'rk_us_1h1g', 'ak_hk_1c1g','chengdu_ecs_special','ak_2c2g_hk']
   },
 }
 const workerConfig: WorkerConfig = {
