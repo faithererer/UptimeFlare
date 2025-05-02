@@ -128,7 +128,7 @@ const workerConfig: WorkerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '103.75.70.204:22', // 监控 SSH 端口 22
+      target: '181.214.136.43:22', // 监控 SSH 端口 22
       tooltip: 'Tokyo BGP Lite (SSH Port)',
       // statusPageLink: '', // 可以添加服务器管理面板链接等
       timeout: 5000,
@@ -154,7 +154,7 @@ const workerConfig: WorkerConfig = {
     },
       {
       id: 'cn2_2c_2g',
-      name: 'cn2_2c_2g',
+      name: '中转鸡',
       method: 'TCP_PING',
       target: '198.44.187.87:22',
       tooltip: 'cn2_2c_2g (SSH Port)',
