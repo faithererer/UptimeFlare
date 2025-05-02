@@ -162,24 +162,24 @@ const workerConfig: WorkerConfig = {
       checkProxy: 'worker://apac'
     },
     // --- 原来注释掉的监控项 ---
-    // {
-    //   id: 'ak_2c2g_hk',
-    //   name: 'ak-2c2g-hk',
-    //   method: 'TCP_PING',
-    //   target: '156.224.78.238:22',
-    //   tooltip: 'ak-2c2g-hk (SSH Port)',
-    //   timeout: 5100,
-    //   // checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
-    // },
-    // {
-    //   id: 'chengdu_ecs_special',
-    //   name: '成都ECS特价型',
-    //   method: 'TCP_PING',
-    //   target: '110.40.87.40:22',
-    //   tooltip: '成都ECS特价型 (SSH Port)',
-    //   timeout: 5000,
-    //   // checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
-    // },
+    {
+      id: 'ak_2c2g_hk',
+      name: 'ak-2c2g-hk',
+      method: 'TCP_PING',
+      target: '156.224.78.238:22',
+      tooltip: 'ak-2c2g-hk (SSH Port)',
+      timeout: 5100,
+      checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
+    },
+    {
+      id: 'chengdu_ecs_special',
+      name: '成都ECS特价型',
+      method: 'TCP_PING',
+      target: '110.40.87.40:22',
+      tooltip: '成都ECS特价型 (SSH Port)',
+      timeout: 5000,
+      checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
+    },
     // {
     //   id: 'yingyu',
     //   name: '樱雨云',
