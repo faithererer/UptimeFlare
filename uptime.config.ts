@@ -190,7 +190,7 @@ const workerConfig: WorkerConfig = {
       id: 'chengdu_ecs_special',
       name: '成都ECS特价型',
       method: 'TCP_PING',
-      target: '110.40.87.40:22',
+      target: '110.40.58.12:22',
       tooltip: '成都ECS特价型 (SSH Port)',
       timeout: 5000,
       checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
