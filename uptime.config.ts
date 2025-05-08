@@ -79,9 +79,9 @@ const workerConfig: WorkerConfig = {
       id: 'gemini_polling_monitor',
       name: 'Gemini轮询',
       method: 'GET',
-      target: 'https://faithererer-gemini-balance.hf.space/',
+      target: 'https://gemini.zjcspace.xyz/',
       tooltip: 'Gemini协议消息轮询服务',
-      statusPageLink: 'https://faithererer-gemini-balance.hf.space/',
+      statusPageLink: 'https://gemini.zjcspace.xyz/',
       expectedCodes: [200, 301, 401], // 包含可能的跳转或认证状态码
       timeout: 8000,
       headers: {
