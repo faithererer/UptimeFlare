@@ -127,7 +127,7 @@ const workerConfig: WorkerConfig = {
       target: 'http://blog.zjcspace.xyz/',
       tooltip: '博客',
       // 注意：你原来的 statusPageLink 指向了 sillytavern，这里保留了，请确认是否正确
-      statusPageLink: 'http://sy.zjcspace.xyz/',
+      statusPageLink: 'http://blog.zjcspace.xyz/',
       expectedCodes: [200], // 博客通常返回200，如果需要认证则添加401等
       timeout: 10000,
       headers: {
