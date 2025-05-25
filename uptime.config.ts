@@ -15,7 +15,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     "🌐 公共服务": ['imgbed_monitor','postoffice_monitor', 'alist_monitor', 'blog', 'sillytavern_monitor'],
-    "🖥️ 服务器": ['cn2_2c_2g', 'tokyo_bgp_lite', 'rk_us_1h1g', 'ak_hk_1c1g','chengdu_ecs_special','ak_2c2g_hk']
+    "🖥️ 服务器": ['cn2_2c_2g', 'tokyo_bgp_lite', 'rk_us_1h1g', 'ak_hk_1c1g','chengdu_ecs_special','tianyi','ak_2c2g_hk']
   },
 }
 const workerConfig: WorkerConfig = {
@@ -192,6 +192,15 @@ const workerConfig: WorkerConfig = {
       method: 'TCP_PING',
       target: '110.40.58.12:22',
       tooltip: '成都ECS特价型 (SSH Port)',
+      timeout: 5000,
+      checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
+    },
+    {
+      id: 'tianyi',
+      name: '天翼云电脑',
+      method: 'TCP_PING',
+      target: '	110.40.58.12:2222',
+      tooltip: '天翼云电脑 (SSH Port)',
       timeout: 5000,
       checkProxy: 'worker://apac' // 如果需要代理检查，取消注释
     },
