@@ -14,7 +14,7 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    "🌐 公共服务": ['imgbed_monitor', 'gemini_polling_monitor','postoffice_monitor', 'alist_monitor', 'blog', 'sillytavern_monitor'],
+    "🌐 公共服务": ['imgbed_monitor','postoffice_monitor', 'alist_monitor', 'blog', 'sillytavern_monitor'],
     "🖥️ 服务器": ['cn2_2c_2g', 'tokyo_bgp_lite', 'rk_us_1h1g', 'ak_hk_1c1g','chengdu_ecs_special','ak_2c2g_hk']
   },
 }
@@ -75,21 +75,21 @@ const workerConfig: WorkerConfig = {
       // responseKeyword: 'gemini protocol', // 如果服务返回纯文本可添加验证
       checkProxy: 'worker://apac'
     },
-    {
-      id: 'gemini_polling_monitor',
-      name: 'Gemini轮询',
-      method: 'GET',
-      target: 'https://gemini.zjcspace.xyz/',
-      tooltip: 'Gemini协议消息轮询服务',
-      statusPageLink: 'https://gemini.zjcspace.xyz/',
-      expectedCodes: [200, 301, 401], // 包含可能的跳转或认证状态码
-      timeout: 8000,
-      headers: {
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
-      },
-      // responseKeyword: 'gemini protocol', // 如果服务返回纯文本可添加验证
-      checkProxy: 'worker://apac'
-    },
+    // {
+    //   id: 'gemini_polling_monitor',
+    //   name: 'Gemini轮询',
+    //   method: 'GET',
+    //   target: 'https://gemini.zjcspace.xyz/',
+    //   tooltip: 'Gemini协议消息轮询服务',
+    //   statusPageLink: 'https://gemini.zjcspace.xyz/',
+    //   expectedCodes: [200, 301, 401], // 包含可能的跳转或认证状态码
+    //   timeout: 8000,
+    //   headers: {
+    //       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
+    //   },
+    //   // responseKeyword: 'gemini protocol', // 如果服务返回纯文本可添加验证
+    //   checkProxy: 'worker://apac'
+    // },
     {
       id: 'alist_monitor',
       name: 'alist网盘',
